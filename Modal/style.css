@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  height: 100dvh;
+  width: 100%;
+}
+.container {
+  height: 100dvh;
+  width: 100%;
+}
+.modal__container{
+  display: none;
+
+}
+.open__modal {
+  padding: 0.56rem;
+  margin: 1rem;
+  border: none;
+  color: white;
+  border-radius: 0.34rem;
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  cursor: pointer;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.head-text {
+  line-height: 1.3;
+}
+.head-text p {
+  color: #4f4e4ea9;
+}
+
+.modal__header img {
+  border-radius: 50px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 3px solid #000;
+}
+
+.modal {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 40%;
+  padding: .78rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100dvh;
+}
+.modal__content {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.modal__footer {
+  display: flex;
+  justify-content: end;
+}
+.modal__footer button {
+  padding: 0.56rem;
+  margin: 1rem;
+  border: none;
+  color: white;
+  border-radius: 0.34rem;
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  cursor: pointer;
+}
+.modal__container.open{
+  display: flex;
+  transition: all 3ms ease-in-out;
+}
